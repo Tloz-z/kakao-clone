@@ -48,8 +48,10 @@ body {
 }
 
 .greenBox {
-    margin: 75px 0px 50px 62%;
+    right: 30%;
+    top: 75px;
+    position: fixed;
     height: 50px;
-    width: 10%;
+    width: 100px;
     background-color: #BADC58;
 }
