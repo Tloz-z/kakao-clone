@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
+@import "reset.css";
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #3BA3FC;
+    width: 100%;
+    height: 100%;
+    font-family: "Ubuntu";
+}
+
+.screen {
+    margin: 30px;
+    width: 318px;
+    height: 678px;
+    background-image: url("../image/bg.png");
+    background-size: 318px 678px;
+}
+
+.box {
+    width: inherit;
+    height: inherit;
+    padding: 15px 0px;
+    background-color: rgba(255, 255, 255, 0.658);
+}
+
+.status-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 15px;
+    margin-bottom: 25px;
+}
+
+.status-bar .status-bar__clock{
+    margin-left: 10px;
+    font-size: 13px;
+    font-weight: 700;
+}
+
+.status-bar i {
+    font-size: 12px;
+}
+
+.header {
+    margin: 0px 20px;
+    margin-bottom: 135px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    opacity: 0.4;
+}
+
+.header .header__title {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.header i {
+    font-size: 20px;
+}
+
+.profile {
+    width: 100%;
+}
+
+.profile .profile__box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile .profile__image {
+    width: 67px;
+    height: 67px;
+    background-image: url("../image/profile.png");
+    background-size: 67px 67px;
+    border-radius: 34px;
+    margin-bottom: 20px;
+}
+
+.profile .profile__name {
+    color: #2799FA;
+    font-weight: 700;
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.profile .profile__residence {
+    font-size: 14px;
+    opacity: 0.3;
+    font-weight: 600;
+    margin-bottom: 35px;
+}
+
+.profile .profile__btn {
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 32px;
+}
+
+.profile .profile__follow,
+.profile .profile__message {
+    border: none;
+    width: 127px;
+    height: 43px;
+    border-radius: 10px;
+    font-size: 15px;
+    box-shadow:rgba(0,0,0,0.3) 0px 8px 16px -8px,
+    rgba(0,0,0,0.024) 0px -6px 16px -6px;
+}
+
+.profile .profile__follow {
+    color: #888888;
+    background-color: white;
+}
+
+.profile .profile__message {
+    color: white;
+    background-color: #2799FA;
+}
+
+.profile .profile__info {
+    padding: 0px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 140px;
+}
+
+.profile__info .profile__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 70px;
+}
+
+.profile__info .profile__column div {
+    font-weight: 600;
+    font-size: 14px;
+    opacity: 0.4;
+}
+
+.profile__info .profile__num {
+    margin-bottom: 3px;
+}
+
+.nav .nav__list {
+    padding: 0px 45px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav i {
+    font-size: 18px;
+    opacity: 0.5;
+}
+
+.nav__list-item:nth-child(1) {
+    color: #2799FA;
+}
