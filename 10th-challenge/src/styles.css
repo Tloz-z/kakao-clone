@@ -60,6 +60,7 @@ body {
 }
 
 .header i {
+    cursor: pointer;
     font-size: 20px;
 }
 
@@ -106,6 +107,8 @@ body {
 
 .profile .profile__follow,
 .profile .profile__message {
+    cursor: pointer;
+    outline: none;
     border: none;
     width: 127px;
     height: 43px;
@@ -158,6 +161,7 @@ body {
 }
 
 .nav i {
+    cursor: pointer;
     font-size: 18px;
     opacity: 0.5;
 }
