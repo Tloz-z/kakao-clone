@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Ubuntu:400,500,700&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F7F7F6;
+    font-family: "Ubuntu";
+}
+
+.camera {
+    margin: 50px;
+    width: 640px;
+    height: 480px;
+    position: relative;
+    background-color: #039D91;
+}
+
+.camera__main {
+    width: inherit;
+    height: inherit;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.camera__info {
+    width: inherit;
+    height: inherit;
+    background-color: #283949;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    opacity: 0;
+    transition: top .5s ease-in-out , left .5s ease-in-out,
+    opacity .5s ease-in-out;
+}
+
+.camera__info:hover{
+    top: 20px;
+    left: 20px;
+    opacity: 1;
+}
+
+.camera__title {
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.camera__author {
+    color: #EA4463;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.camera__btn {
+    width: 130px;
+    height: 30px;
+    background-color: #EA4463;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.bubble {
+    margin: 50px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    width: 640px;
+    height: 480px;
+    background-color: #F8A4A1;
+}
+
+.bubble__main {
+    width: inherit;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.bubble__info {
+    width: inherit;
+    height: 0%;
+    background-color: #283949;
+    display: flex;
+    padding: 0px 20px;
+    position: relative;
+    transition: height .5s ease-in-out;
+}
+
+.bubble__main:hover + .bubble__info {
+    height: 40%;
+}
+
+.bubble__info:hover{
+    height: 40%;
+}
+
+.bubble__title {
+    position: absolute;
+    top: 30px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.bubble__author {
+    position: absolute;
+    top: 70px;
+    color: #EA4463;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.bubble__btn {
+    position: absolute;
+    top: 80px;
+    right: 20px;
+    width: 130px;
+    height: 30px;
+    background-color: #EA4463;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.compass {
+    margin: 50px;
+    width: 640px;
+    height: 480px;
+    position: relative;
+}
+
+.compass__main {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #D6F0F9;
+    top: 0px;
+    margin: 0 auto;
+    right: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: height .5s ease-in-out, width .5s ease-in-out,
+    top .5s ease-in-out;
+}
+
+.compass__main:hover {
+    height: 50%;
+    width: 50%;
+    top: 48px;
+}
+
+.compass__info:hover + .compass__main {
+    height: 50%;
+    width: 50%;
+    top: 48px;
+}
+
+.compass__icon {
+    width: 33%;
+    height: 50%;
+}
+
+.compass__info {
+    width: inherit;
+    height: inherit;
+    background-color: #283949;
+    padding: 0px 30px;
+    position: relative;
+}
+
+.compass__title {
+    position: absolute;
+    bottom: 55px;
+    font-size: 30px;
+    color: white;
+    font-weight: 600;
+}
+
+.compass__author {
+    position: absolute;
+    bottom: 30px;
+    color: #EA4463;
+    font-size: 20px;
+}
+
+.compass__btn {
+    position: absolute;
+    bottom: 30px;
+    right: 30px;
+    width: 130px;
+    height: 30px;
+    background-color: #EA4463;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 600;
+}
